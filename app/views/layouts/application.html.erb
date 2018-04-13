@@ -3,8 +3,9 @@
   <head>
     <title>EStore</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <%= stylesheet_link_tag    'http://fonts.googleapis.com/css?family=Raleway:400,700,600,500,300' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
@@ -12,16 +13,22 @@
   <!-- Off screen navigation -->
     <div id="sidr">
 			<ul>	
-				<li><a class="side-logo" href="index.html">Chair<span class="logo-dot accent-bg"></span></a></li>
-				<li class="active"><a href="#">Modern Chairs</a></li>
-				<li><a href="#">Sofas</a></li>
-				<li><a href="#">Handmade</a></li>
-				<li><a href="#">Industrial</a></li>
-				<li><a href="#">For office</a></li>
+				<li>
+				<%= link_to '#', class: "side-logo" do %>
+					EStore
+					<span class="logo-dot accent-bg"></span>
+				<% end %>
+				</li>
+				<li class="active">
+					<%= link_to 'Store', root_path %>
+				</li>
 				<li class="divider"><span></span></li>
-				<li><a href="./privacy.html">Privacy</a></li>
-				<li><a href="./terms.html">Terms & conditions</a></li>
-				<li><a href="./404.html">404 Error</a></li>
+				<li class="active">
+					<%= link_to 'Privacy', root_path %>
+				</li>
+				<li class="active">
+					<%= link_to 'Terms & conditions', root_path %>
+				</li>
 			</ul>
 
 			<div class="side-social">
@@ -105,7 +112,7 @@
 		<div class="main-container">
 			<header class="fullscreen-element">
 				<div class="background-image-holder parallax-background overlay" data-stellar-background-ratio="0.9">
-					<img class="background-image" alt="Background Image" src="images/1600x900.png">
+					<%= image_tag('1600x900.png', class: 'background-image', alt: 'Background Image') %>
 				</div>
 
 				<div class="container align-vertical hero">
@@ -140,7 +147,7 @@
 
 			<section>
 				<div class="background-image-holder overlay" data-stellar-background-ratio="0.9">
-					<img class="background-image" alt="Background Image" src="images/1600x900.png">
+					<%= image_tag('1600x900.png', class: 'background-image', alt: 'Background Image') %>
 				</div>
 				<div class="container">
 					<div class="row">
@@ -157,7 +164,7 @@
 				<div class="container">
 					<div class="row products-container">
 						<div class="col-md-4 col-sm-6 col-xs-12 product">
-							<div class="thumbnail" style="background-image: url('images/730x730.png');">
+							<div class="thumbnail" style="background-image: url('/assets/730x730.png');">
 								<div class="product-details text-center">
 									<div class="align-vertical">
 										<h3>Yellow chair</h3>
@@ -168,7 +175,7 @@
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-6 col-xs-12 product">
-							<div class="thumbnail" style="background-image: url('images/730x730.png');">
+							<div class="thumbnail" style="background-image: url('/assets/730x730.png');">
 								<div class="product-details text-center">
 									<div class="align-vertical">
 										<h3>Sofa</h3>
@@ -179,7 +186,7 @@
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-6 col-xs-12 product">
-							<div class="thumbnail" style="background-image: url('images/730x730.png');">
+							<div class="thumbnail" style="background-image: url('/assets/730x730.png');">
 								<div class="product-details text-center">
 									<div class="align-vertical">
 										<h3>Clasic chair</h3>
@@ -191,7 +198,7 @@
 						</div>
 
 						<div class="col-md-4 col-sm-6 col-xs-12 product">
-							<div class="thumbnail" style="background-image: url('images/730x730.png');">
+							<div class="thumbnail" style="background-image: url('/assets/730x730.png');">
 								<div class="product-details text-center">
 									<div class="align-vertical">
 										<h3>Leather chair</h3>
@@ -202,7 +209,7 @@
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-6 col-xs-12 product">
-							<div class="thumbnail" style="background-image: url('images/730x730.png');">
+							<div class="thumbnail" style="background-image: url('/assets/730x730.png');">
 								<div class="product-details text-center">
 									<div class="align-vertical">
 										<h3>Blue chair</h3>
@@ -213,7 +220,7 @@
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-6 col-xs-12 product">
-							<div class="thumbnail" style="background-image: url('images/730x730.png');">
+							<div class="thumbnail" style="background-image: url('/assets/730x730.png');">
 								<div class="product-details text-center">
 									<div class="align-vertical">
 										<h3>Orange chair</h3>
@@ -225,7 +232,7 @@
 						</div>
 
 						<div class="col-md-4 col-sm-6 col-xs-12 product">
-							<div class="thumbnail" style="background-image: url('images/730x730.png');">
+							<div class="thumbnail" style="background-image: url('/assets/730x730.png');">
 								<div class="product-details text-center">
 									<div class="align-vertical">
 										<h3>Sofa</h3>
@@ -236,7 +243,7 @@
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-6 col-xs-12 product">
-							<div class="thumbnail" style="background-image: url('images/730x730.png');">
+							<div class="thumbnail" style="background-image: url('/assets/730x730.png');">
 								<div class="product-details text-center">
 									<div class="align-vertical">
 										<h3>Yellow chair</h3>
@@ -247,7 +254,7 @@
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-6 col-xs-12 product">
-							<div class="thumbnail" style="background-image: url('images/730x730.png');">
+							<div class="thumbnail" style="background-image: url('/assets/730x730.png');">
 								<div class="product-details text-center">
 									<div class="align-vertical">
 										<h3>Clasic chair</h3>
@@ -263,7 +270,7 @@
 
 			<section>
 				<div class="background-image-holder on-page overlay">
-					<img class="background-image" alt="Background Image" src="images/1600x900.png">
+					<%= image_tag('1600x900.png', class: 'background-image', alt: 'Background Image') %>
 				</div>
 				<div class="container">
 					<div class="row">
@@ -278,7 +285,7 @@
 
 			<section class="newsletter accent-bg">
 				<div class="background-image-holder overlay accent" data-stellar-background-ratio="0.9">
-					<img class="background-image" alt="Background Image" src="images/1600x900.png">
+					<%= image_tag('1600x900.png', class: 'background-image', alt: 'Background Image') %>
 				</div>
 				<div class="container">
 					<div class="row">

@@ -606,15 +606,15 @@ input[type="reset"]:focus {
 
 /* Icon font Linea */
 @font-face {
-  font-family: "linea-basic-10";
-  src: url("../fonts/linea-basic-10.eot");
-  src: url("../fonts/linea-basic-10.eot?#iefix") format("embedded-opentype"), url("../fonts/linea-basic-10.woff") format("woff"), url("../fonts/linea-basic-10.ttf") format("truetype"), url("../fonts/linea-basic-10.svg#linea-basic-10") format("svg");
+  font-family: "/assets/linea-basic-10";
+  src: url("/assets/fonts/linea-basic-10.eot");
+  src: url("/assets/linea-basic-10.eot?#iefix") format("embedded-opentype"), url("/assets/linea-basic-10.woff") format("woff"), url("/assets/linea-basic-10.ttf") format("truetype"), url("/assets/linea-basic-10.svg#linea-basic-10") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 [data-icon]:before {
-  font-family: "linea-basic-10" !important;
+  font-family: "/assets/linea-basic-10" !important;
   content: attr(data-icon);
   font-style: normal !important;
   font-weight: normal !important;
@@ -628,7 +628,7 @@ input[type="reset"]:focus {
 
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
-  font-family: "linea-basic-10" !important;
+  font-family: "/assets/linea-basic-10" !important;
   font-style: normal !important;
   font-weight: normal !important;
   font-variant: normal !important;
@@ -2207,14 +2207,14 @@ a.load-more {
 /* SLICK CAROUSEL THEME */
 /* Slider */
 .slick-loading .slick-list {
-  background: #fff url("../images/ajax-loader.gif") center center no-repeat;
+  background: #fff url("/assets/ajax-loader.gif") center center no-repeat;
 }
 
 /* Icons */
 @font-face {
-  font-family: "slick";
-  src: url("../fonts/slick.eot");
-  src: url("../fonts/slick.eot?#iefix") format("embedded-opentype"), url("../fonts/slick.woff") format("woff"), url("../fonts/slick.ttf") format("truetype"), url("../fonts/slick.svg#slick") format("svg");
+  font-family: "/assets/slick";
+  src: url("/assets/slick.eot");
+  src: url("/assets/slick.eot?#iefix") format("embedded-opentype"), url("/assets/slick.woff") format("woff"), url("/assets/slick.ttf") format("truetype"), url("/assets/slick.svg#slick") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -2258,7 +2258,7 @@ a.load-more {
 }
 
 .slick-prev:before, .slick-next:before {
-  font-family: "slick";
+  font-family: "/assets/slick";
   font-size: 20px;
   line-height: 1;
   color: white;
@@ -2355,7 +2355,7 @@ a.load-more {
   content: "•";
   width: 20px;
   height: 20px;
-  font-family: "slick";
+  font-family: "/assets/slick";
   font-size: 6px;
   line-height: 20px;
   text-align: center;
